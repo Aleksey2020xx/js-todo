@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+        crossorigin="anonymous"
+    >
+    <title>TODO</title>
+    <script defer src="./todo-app.js"></script>
+    <script>
+        // document.addEventListener('DOMContentLoaded', function () {   
+        //     createTodoApp(document.getElementById('todo-app'), 'Мои дела')
+        // });
+  
+        let arrayList = [
+            {name: 'Купить хлеб', done: true},
+            {name: 'Купить книгу', done: true}
+        ] 
+
+        document.addEventListener('DOMContentLoaded', function () {
+            createTodoContainer(document.getElementById('todo-app'), 'Мои дела');
+        })
+    </script>
+</head>
+<body>
+
+    <div class="container mb-5">
+        <nav class="nav">
+            <a class="nav-link" href="index.html">Мои дела</a>
+            <a class="nav-link" href="mom.html">Мамины дела</a>
+            <a class="nav-link" href="dad.html">Папины дела</a>
+        </nav>
+    </div>
+    <div id="todo-app" class="container"></div>
+</body>
+</html>
